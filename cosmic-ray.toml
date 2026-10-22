@@ -1,0 +1,9 @@
+[cosmic-ray]
+module-path = "src/fintrack/domain"
+python-version = "3.11"
+timeout = 10.0
+excluded-modules = ["src/fintrack/domain/repositories.py"]
+test-command = "pytest tests/domain"
+
+[cosmic-ray.distributor]
+name = "local"
